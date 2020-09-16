@@ -10,10 +10,10 @@ nav li a {
     padding: 5px 15px;
     display: inline-block;
     text-decoration: none;
-    background-color: #000000;
-    color: #ffffff;
-}
-nav li a:hover {
     background-color: #ffffff;
     color: #000000;
+}
+nav li a:hover {
+    background-color: #000000;
+    color: #ffffff;
 }
