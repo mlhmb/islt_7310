@@ -3,45 +3,81 @@
     <head>
         <meta charset="utf-8">
         <title>About Page | Man Chi Lee</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
         <link type="text/css" rel="stylesheet" href="nav.css"/>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="reflection.html">Reflection</a></li>
-                <li><a href="#contact.html">Contact</a></li>
-                <li><a href="#experience.html">Experience</a></li>
-            </ul>
+        <nav class="nav-extended">
+            <div class="nav-wrapper container">
+                <a href="#" data-target="mobile-slide-menu" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
+                <ul id="nav-mobile" class="hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="projects.html" class="project-trigger">Projects</a>
+                        <ul class="project-content">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="#contact.html">Contact</a></li>
+                    <li><a href="#experience.html">Experience</a></li>
+                </ul>
+            </div>
         </nav>
-        <header><h1>About Page</h1></header>
-        <main>
-        <h2>Man Chi Lee</h2>
-        <p>I am a <b><i>science teacher</i></b> playing a leading role in organizing student activity at an international
-            school. I like to record students’ activities by photo and video. Usually, I love to give them a
-            tailor-made video clip as a memorable gift while they promote to the next class. I have not had
-            any formal web lesson training before; however, I have tried to create a simple one by using wix.
-            It is a powerful tool to build a website for those people who don't have a strong code skill just
-            like me. I don’t have to understand how it works behind the scenes as long as I upload some
-            pictures and videos into the template that I choose.</P>
-        <p>
-            I believe I will learn fundamental skills to build a website, I mean the real personal website. I
-            would like to record my students' school life and have them manage it with me together.
-            Hopefully, this website will become their lifelong thing to do with their classmates. I can tell this
-            will be one of the most valuable things they keep in their life.
-            <br/>
-            I like reading fiction, the web one. I usually spend some time like 20-30 mins per day reading.
-            When free time comes, I hang out with friends for some outdoor activities.</p>
-        <h2>Education Overview</h2>
-        <p>I graduated from San Franciso State University in 2007 with a bachelor assoicate degree in Economics </p>
-        <P><a href="ManChi_Lee_Resume.pdf">Check out my resume for more details</a></P>
-        <h2>Favorite Quote</h2>
-        <blockquote cite="https://blog.hubspot.com/sales/18-motivational-quotes-to-start-your-day-list">
-            "Your time is limited, so don't waste it living someone else's life." -Steve Jobs
-        </blockquote>
-        </main>
-        <footer>Man Chi Lee | mlhmb@mail.missouri.edu | Copyright &copy; 2020</footer>
+        <ul id="mobile-slide-menu" class="sidenav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="projects.html">Projects</a>
+                <ul class="project-menu-inner">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="#contact.html">Contact</a></li>
+            <li><a href="#experience.html">Experience</a></li>
+        </ul>
+        <div class="container">
+            <header><h1>About Page</h1></header>
+            <main>
+            <h2>Man Chi Lee</h2>
+            <p>I am a <b><i>science teacher</i></b> playing a leading role in organizing student activity at an international
+                school. I like to record students’ activities by photo and video. Usually, I love to give them a
+                tailor-made video clip as a memorable gift while they promote to the next class. I have not had
+                any formal web lesson training before; however, I have tried to create a simple one by using wix.
+                It is a powerful tool to build a website for those people who don't have a strong code skill just
+                like me. I don’t have to understand how it works behind the scenes as long as I upload some
+                pictures and videos into the template that I choose.</P>
+            <p>
+                I believe I will learn fundamental skills to build a website, I mean the real personal website. I
+                would like to record my students' school life and have them manage it with me together.
+                Hopefully, this website will become their lifelong thing to do with their classmates. I can tell this
+                will be one of the most valuable things they keep in their life.
+                <br/>
+                I like reading fiction, the web one. I usually spend some time like 20-30 mins per day reading.
+                When free time comes, I hang out with friends for some outdoor activities.</p>
+            <h2>Education Overview</h2>
+            <p>I graduated from San Franciso State University in 2007 with a bachelor assoicate degree in Economics </p>
+            <P><a href="ManChi_Lee_Resume.pdf">Check out my resume for more details</a></P>
+            <h2>Favorite Quote</h2>
+            <blockquote cite="https://blog.hubspot.com/sales/18-motivational-quotes-to-start-your-day-list">
+                "Your time is limited, so don't waste it living someone else's life." -Steve Jobs
+            </blockquote>
+            </main>
+            <footer>Man Chi Lee | mlhmb@mail.missouri.edu | Copyright &copy; 2020</footer>
+        </div>
     </body>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+        });
+    </script>
 </html>
