@@ -37,6 +37,10 @@ footer i, footer a {
     vertical-align: middle;
 }
 
+footer a:hover i{
+    transform: scale(1.2);
+}
+
 html {
     font-size: 16px;
 }
