@@ -1,4 +1,4 @@
-.reflection-para:first-child::first-letter {
+/* .reflection-para:first-child::first-letter {
     font-size: 30px;
 }
 
@@ -13,8 +13,11 @@
     -ms-text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: transparent;
-}
+} */
 
+.nav-extended {
+    margin-bottom: 1rem;
+}
 footer {
     margin-top: 50px;
     padding: 25px 0;
@@ -80,5 +83,8 @@ h3 {
     }
     h3 {
         font-size: 1.6rem;
+    }
+    video {
+        display: none;
     }
 }
