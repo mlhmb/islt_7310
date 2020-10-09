@@ -50,7 +50,62 @@
                 <h1>Contact Me</h1>
             </header>
             <main>
-                <p>My contact information goes here.</p>
+                <div class="row">
+                    <div class="col s12 l6 offset-l3">
+                        <table class="contact-table">
+                            <caption>How to contact Man Chi Lee</caption>
+                            <thead>
+                                <tr><th>Instruction</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1. Fill the Contact form</td>
+                                </tr>
+                                <tr>
+                                    <td>2. Make sure you enter a validate email address</td>
+                                </tr>
+                                <tr>
+                                    <td>3. Submit the form</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 l6 offset-l3">
+                        <form action="mailto:mlhmb@mail.missouri.edu?subject=Portfolio/Professional%20Website%20Contact">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="first_name" name="first_name" placeholder="Your First Name" value="" required type="text"/>
+                                    <label for="first_name" class="active">First Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="last_name" name="last_name" placeholder="Your Last Name" value="" required type="text"/>
+                                    <label for="last_name" class="active">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" name="email" placeholder="Your Email Address" value="" required type="email"/>
+                                    <label for="email" class="active">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="message" name="message" placeholder="Enter Your Message Here" required class="materialize-textarea"></textarea>
+                                    <label for="message" class="active">Message</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <button class="waves-effect waves-light btn">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </main>
         </div>
         <footer>
@@ -58,10 +113,10 @@
                 <a href="mailto:mlhmb@mail.missouri.edu">Man Chi Lee</a> | <a href="mailto:mlhmb@mail.missouri.edu"><i class="small material-icons">email</i>&nbsp;mlhmb@mail.missouri.edu</a> | <a href="tel:18888888888"><i class="small material-icons">phone</i> 1+888-888-8888</a> | Copyright &copy; 2020
             </div>
         </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                M.AutoInit();
+            });
+        </script>
     </body>
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-            M.AutoInit();
-        });
-    </script>
 </html>

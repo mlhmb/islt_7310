@@ -1,19 +1,10 @@
-/* .reflection-para:first-child::first-letter {
-    font-size: 30px;
+.contact-table {
+    border: 1px solid rgb(242 242 242 / 50%);
 }
 
-.reflection-para:not(:first-child) {
-    text-indent: 20px;
+.contact-table tbody tr:nth-child(odd) {
+    background-color: rgb(242 242 242 / 50%);
 }
-
-.reflection-para {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: transparent;
-} */
 
 .nav-extended {
     margin-bottom: 1rem;
