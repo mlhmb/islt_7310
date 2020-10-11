@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <title>Home Page | Man Chi Lee</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="./images/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -14,7 +13,23 @@
     <body>
         <nav class="nav-extended">
             <div class="nav-wrapper container">
-                <a href="#" data-target="mobile-slide-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <div class="header-nav-container">
+                    <a href="javascript:void(0);" data-target="mobile-slide-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="mobile-slide-menu" class="sidenav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li>
+                            <a href="projects.html">Projects</a>
+                            <ul class="project-menu-inner">
+                                <li><a href="projects.html#project-1">Project 1</a></li>
+                                <li><a href="projects.html#project-2">Project 2</a></li>
+                                <li><a href="projects.html#project-3">Project 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reflection.html">Reflection</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
                 <ul id="nav-mobile" class="hide-on-med-and-down">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -31,20 +46,6 @@
                 </ul>
             </div>
         </nav>
-        <ul id="mobile-slide-menu" class="sidenav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li>
-                <a href="projects.html">Projects</a>
-                <ul class="project-menu-inner">
-                    <li><a href="projects.html#project-1">Project 1</a></li>
-                    <li><a href="projects.html#project-2">Project 2</a></li>
-                    <li><a href="projects.html#project-3">Project 3</a></li>
-                </ul>
-            </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
         <div class="container">
             <header>
                 <h1>Welcome to Man Chi Lee's Website</h1>
@@ -66,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                <p>I grew up in Hong Kong, a famous food paradise. My family brought me to San Francisco in my early twenties. After working for several large nonprofit agencies in the city, I choose to become a teacher. Then a magical thing happened: I discovered my love for playing with students, I know, almost everyone loves playing. And over the course of a couple of life-changing years, I created my first website here. I am going to record my favorite memory with my students.</p>
+                <p>I grew up in Hong Kong, a famous food paradise. My family brought me to San Francisco in my early twenties. After working for several large nonprofit agencies in the city, I choose to become a teacher. Then a magical thing happened: I discovered my love for playing with students, I know, almost everyone loves playing. And over the course of a couple of life-changing years, I created this personal webpage is to record my life at school and the students with pictures and words. At the same time, through sharing, I hope I can get suggestions from everyone and I hope I can become better. This is my first website creation, and I will continue to improve it in the future.</p>
             </main>
         </div> 
         <footer>
@@ -74,14 +75,5 @@
                 <a href="mailto:mlhmb@mail.missouri.edu">Man Chi Lee</a> | <a href="mailto:mlhmb@mail.missouri.edu"><i class="small material-icons">email</i>&nbsp;mlhmb@mail.missouri.edu</a> | <a href="tel:18888888888"><i class="small material-icons">phone</i> 1+888-888-8888</a> | Copyright &copy; 2020
             </div>
         </footer>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                M.Carousel.init({
-                    fullWidth: true,
-                    indicators: true
-                });
-                M.AutoInit();
-            });
-        </script>
     </body>
 </html>
